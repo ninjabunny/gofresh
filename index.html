@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<style>
+    iframe {
+    	width: 100%;
+    	height: 100%;
+    }
+</style>
+<body>
+
+<iframe id="frame" src="https://online-go.com/puzzle/2884" style="position: absolute; height: 100%; border: none">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+
+</body>
+<script>
+	var fiveMinutes = 600000;
+	var url = "https://online-go.com/puzzle/";
+	var count = 2824;
+	setInterval(function(){ 
+		document.getElementById("frame").src = url + count;	
+		count++;
+		if (count === 2824 + 899) count = 2824;
+	}, fiveMinutes);
+	
+
+</script>
+</html>
